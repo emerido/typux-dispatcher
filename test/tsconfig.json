@@ -7,6 +7,7 @@
     "lib": [
       "dom",
       "es2015",
+      "es2015.generator",
       "es2015.symbol"
     ],
     "experimentalDecorators": true

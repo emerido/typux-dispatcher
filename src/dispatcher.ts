@@ -1,10 +1,20 @@
 import {Constructable, metadata} from 'typux';
 
+/**
+ * Simple messages dispatcher
+ */
 export class Dispatcher
 {
 
     private _handlers : {[id : string] : (message : any) => any} = {};
 
+    /**
+     * Register handler for specific message type
+     *
+     * @param {Function} message
+     * @param {Function} handler
+     * @returns {Dispatcher}
+     */
     public register<T>(message : Constructable<T>, handler : (message : T) => any) : this
     {
         let info = metadata.getClassInfo(message);
@@ -17,6 +27,12 @@ export class Dispatcher
         return this;
     }
 
+    /**
+     * Dispatch message
+     *
+     * @param {Object} message
+     * @returns {Promise<*>}
+     */
     public dispatch(message : any) : Promise<any>
     {
         let info = metadata.getClassInfo(message);

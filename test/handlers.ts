@@ -22,6 +22,6 @@ export async function getUserById(model : UserGet)
         if (model.username && x.username == model.username) {
             return true;
         }
-        return false;
+        throw new Error('User not found');
     })
 }
