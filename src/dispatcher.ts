@@ -48,4 +48,10 @@ export class Dispatcher
         return Promise.resolve(data);
     }
 
+    public get messages() {
+        return Object.keys(this._handlers).map(x => (
+            metadata.getClassInfoByHash(x).type
+        ));
+    }
+
 }

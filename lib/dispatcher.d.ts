@@ -19,4 +19,5 @@ export declare class Dispatcher {
      * @returns {Promise<*>}
      */
     dispatch(message: any): Promise<any>;
+    readonly messages: any[];
 }
