@@ -1,0 +1,15 @@
+{
+  "name": "typux-dispatcher",
+  "main": "lib/index.js",
+  "types" : "lib/index.d.ts",
+  "author": "Shvorak Alexey <dr.emerido@gmail.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emerido/typux-dispatcher.git"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.5"
+  }
+}

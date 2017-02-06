@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "pretty": true,
+    "sourceMap": false,
+    "declaration": true,
+    "outDir": "lib/",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2015.symbol"
+    ],
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files" : [
+    "src/index.ts"
+  ]
+}
